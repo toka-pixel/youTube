@@ -1,16 +1,16 @@
-import React from 'react';
-import './Filter.scss';
+import React from "react";
+import "./Filter.scss";
 
-const Filter=({totalResults})=>{
+const Filter = ({ totalResults }) => {
+  return (
+    <div className="filter container">
+      <p>About {totalResults} filtered results</p>
+      <div className="categoryFilter">
+        <img src="/imgs/filter.svg" />
+        <p> Filter</p>
+      </div>
+    </div>
+  );
+};
 
-    return(
-        <div className='filter container'>
-            
-               <p>About {totalResults} filtered results</p>
-               <p> Filter</p>
-            
-        </div>
-    )
-}
-
-export default Filter
+export default Filter;

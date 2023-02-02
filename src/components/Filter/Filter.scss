@@ -1,21 +1,29 @@
-@import '../../styles/common';
+@import "../../styles/common";
 
-.filter{
-    @include flex(flex, space-around, center);
-    margin-top: 70px;
-    &{
-        @media (max-width:600px) {
-            margin-top: 10px;
-        }
+.filter {
+  @include flex(flex, space-around, center);
+  margin-top: 70px;
+  & {
+    @media (max-width: 600px) {
+      margin-top: 10px;
     }
+  }
+  .categoryFilter {
+    @include flex(flex);
+    img {
+      width: 20px;
+      margin-right: 9px;
+      margin-top: 3px;
+    }
+  }
 }
 
-.mobileFilter{
-    select{
-        padding: 10px;
-    }
-    @include flex(flex, space-around, center);
-    margin-top: 17px;
-    border-bottom: 1px solid $gray;
-    padding-bottom: 7px;
+.mobileFilter {
+  select {
+    padding: 10px;
+  }
+  @include flex(flex, space-around, center);
+  margin-top: 17px;
+  border-bottom: 1px solid $gray;
+  padding-bottom: 7px;
 }
