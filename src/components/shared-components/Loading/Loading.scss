@@ -1,0 +1,18 @@
+@import "../../../styles/common";
+.loading {
+  @include center-vertical-horizontal;
+  .loadImg{
+    width: 40px;
+  animation: App-logo-spin infinite 0.90s linear;
+  }
+
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}

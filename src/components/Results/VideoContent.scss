@@ -1,0 +1,23 @@
+@import '../../styles/common';
+
+.videoContent{
+    @include flex(flex,$justify:flex-start);
+    margin-bottom: 17px;
+    &{
+        @media (max-width:600px){
+        @include flex(block);
+        }
+    }
+    .videoImg{
+        width: 200px;
+        border-radius: 10px;
+        margin-right: 21px;
+       
+        &{
+            @media (max-width:600px) {
+                width: 100%;
+            }
+        }
+    }
+
+}

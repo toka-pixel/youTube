@@ -1,3 +1,4 @@
+@import "./styles/common";
 .App {
   text-align: center;
 }
@@ -14,25 +15,23 @@
 }
 
 .App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
   font-size: calc(10px + 2vmin);
-  color: white;
+  color: $white;
+  padding: 10px 0px;
+  height: 70px;
+}
+.container {
+  padding: 0 20px;
 }
 
-.App-link {
-  color: #61dafb;
+.search {
+  width: 100%;
+
+  @include flex(flex, space-around, center);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.searchImg {
+  width: 57px;
+  height: 25px;
+  cursor: pointer;
 }

@@ -1,0 +1,21 @@
+@import '../../styles/common';
+
+.filter{
+    @include flex(flex, space-around, center);
+    margin-top: 70px;
+    &{
+        @media (max-width:600px) {
+            margin-top: 10px;
+        }
+    }
+}
+
+.mobileFilter{
+    select{
+        padding: 10px;
+    }
+    @include flex(flex, space-around, center);
+    margin-top: 17px;
+    border-bottom: 1px solid $gray;
+    padding-bottom: 7px;
+}

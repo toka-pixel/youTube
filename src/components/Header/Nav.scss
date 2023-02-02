@@ -1,0 +1,32 @@
+@import "../../styles/common";
+
+.desktopNav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  @include flex(flex, space-around, center);
+  background-color: $white;
+}
+.mobileNav {
+  background: $red;
+  @include flex(flex, space-between);
+}
+
+.desktopForm {
+  display: flex;
+}
+.mobileForm {
+  display: block;
+}
+
+.input {
+  height: 29px;
+}
+
+.input:focus {
+  border-color: 0;
+}
+.searchValue {
+  display: inline-block;
+  margin-right: 28px;
+}

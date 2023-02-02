@@ -1,0 +1,18 @@
+@import "../../styles/common";
+
+.channel {
+  @include flex(flex, $justify: flex-start);
+  margin-bottom: 22px;
+  .content {
+    margin-left: 12px;
+  }
+  img {
+    border-radius: 56px;
+    width: 116px;
+    height: 118px;
+    line-height: 97px;
+  }
+  .name {
+    font-weight: 900;
+  }
+}

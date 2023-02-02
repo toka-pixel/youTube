@@ -8,8 +8,9 @@ export const getData = (search) => {
     params: {
       q: search,
       part: "snippet",
-      key: "",
+      key: process.env.REACT_APP_API_KEY,
       nextPageToken: "CAUQAA",
+      type: "video",
     },
   });
 };
